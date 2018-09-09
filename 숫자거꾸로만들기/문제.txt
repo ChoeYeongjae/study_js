@@ -1,0 +1,18 @@
+문제3) 입력받은 문장을 '단어'별로 뒤집는 함수를 작성하시오.
+출력 예1)
+입력: "최영재는 컴퓨터 프로그래머"
+출력: "는재영최 터퓨컴 머래그로프"
+
+출력 예2)
+입력: “hello world”
+출력: “olleh dlrow”
+
+출력 예3)
+입력: “show me the money”
+출력: “wohs em eht yenom”
+
+function reverseWord(s) {
+var answer = '';
+
+return answer;
+}

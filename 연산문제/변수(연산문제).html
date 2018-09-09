@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+   
+   <!--
+   1.입력받을 변수 생성
+   2.입력받은값에 따라 작동하는 조건문 생성
+   3.조건에따라 A+ , A , B+ , B 출력
+   4.95~100 인경우는 A+  95,96,97,98,99,100로 생각해서 한가지값 넣기
+    
+   switch 잡을시 숫자범위 지정하기 애매함.          
+   -->
+    <script>
+      
+        
+    function printDegree(score) {
+                    
+        var scores = score;
+        
+        if(scores >= 95 && scores <= 100)
+        {
+             alert('A+'+'입니다');
+        }
+        else if(scores >= 90 && scores <= 94)
+        {
+            alert('A'+'입니다');    
+        }
+        
+        else if(scores >= 85 && scores <= 89)
+        {
+            alert('B+'+'입니다');    
+        }
+        else{
+            alert('B'+'입니다');
+        }
+
+    }
+        
+    printDegree(prompt('함수를입력하세요'));    
+        
+    </script>
+   
+  </body>
+</html>

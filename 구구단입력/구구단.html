@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+    <script>
+
+    function printGugu(n) {
+
+        for(var N = n ; N <= 100 ; N++)
+        {
+            for(var M = 0 ; M <= 9 ; M++)
+            {
+                document.write(N+'*'+M+'='+N*M + "</br>");
+                if(M == 9)
+                {
+                   break;
+                }
+            }
+            //입력받은 n 값과 입력을 받고 N값이 결과와 같을경우 멈추게함 , 멈추지않을시 첫번째 for문안에 자꾸 반복되서 쓸데없는값 생성됨
+            
+            if(N == n)
+            {
+               break;
+            }
+        }   
+    }
+                
+    printGugu(prompt("숫자를입력해주세요"));
+        
+   </script>
+
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+        
+        
+        
+        function add(n)
+        {
+        //총결과값을 받는 변수 
+        var total = 0;
+        //1~100까지의 숫자들로 구성    
+        for(var N = 1 ; N <= 100  ; N++)
+        {
+            //반복문에서 N값은 계속 증가 , 입력한결과 만큼 나누어서 짝수가 될수있는 조건문 , 2로 나누었을때 짝수인경우 제외하는 조건문
+            
+            if(N%n != 0 )
+            {
+                //반복적인 결과값을 total 변수에 복합연산자를 통해서 조건이 맞을때마다 증가
+               total += N ;
+            }
+          }
+        document.write("합계 : "+total);
+        }
+        
+            add(prompt("제외할 수를 입력하세요"));
+        
+    </script>
+      
+  </body>
+</html>
