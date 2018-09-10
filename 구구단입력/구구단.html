@@ -8,29 +8,23 @@
 
 
     <script>
-
-    function printGugu(n) {
-
-        for(var N = n ; N <= 100 ; N++)
+        
+        function printGugu(n)
         {
-            for(var M = 0 ; M <= 9 ; M++)
+            for(var N = 1 ; N <= 100 ; N++)
             {
-                document.write(N+'*'+M+'='+N*M + "</br>");
-                if(M == 9)
+                for(var M = 1 ; M <= 9 ; M++)
                 {
-                   break;
+                    document.write(N + '*' + M + '=' + N * M + "</br>");
+                }
+                if(N == n)  //조건문에서 입력받은값과 현재 반복분을 통해서 순회하고있는 값하고 일치되면 멈추게하는 조건문
+                {
+                    break;
                 }
             }
-            //입력받은 n 값과 입력을 받고 N값이 결과와 같을경우 멈추게함 , 멈추지않을시 첫번째 for문안에 자꾸 반복되서 쓸데없는값 생성됨
-            
-            if(N == n)
-            {
-               break;
-            }
-        }   
-    }
-                
-    printGugu(prompt("숫자를입력해주세요"));
+        }
+        
+        printGugu(prompt("숫자를입력해주세요"));
         
    </script>
 
