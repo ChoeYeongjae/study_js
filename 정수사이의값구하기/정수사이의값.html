@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+        function add()
+        {
+            var a = parseInt(prompt("a값입력"));
+            var b = parseInt(prompt("b값입력"));
+            var res = 0;
+            
+            
+            if(a == b)
+            {
+               alert(a); 
+            }
+            else if(a > b)
+            {
+                for(var i = a ; i => b ; i--)
+               {
+                    res += i;
+                    if(i == 0) //i의값을 if문으로 잡아주지 못하면 계속 -1로 떨어지기 때문에 a==b가 같고 같은경우 연산을 끝내기위함
+                    {
+                     break;
+                    }       
+               }
+                alert(res);
+            }
+            else
+            {
+                for(var i = a ; i <= b ; i++)
+                {
+                    res += i;
+                    if(a == b) //a와b가 결과가 같을경우 멈추게 하기위해서 
+                    {
+                     break;
+                    }       
+               }
+                alert(res);
+            }
+         
+        }
+        add();
+        
+    </script>
+   
+  </body>
+</html>
