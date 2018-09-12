@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+        
+        function word(n)
+        {
+            var str = n.split("");
+            var words1 = "";
+            var strs = "";
+            var strss = "";
+            
+            for(var i = 0 ; i < str.length ; i++)
+            {
+                var strss = str[i].split("");
+                
+                if(i % 2 == 1)
+                {
+                   words1 += strss;
+                }
+            }
+            
+              console.log(words1);
+        }
+        word(prompt("입력해주세요"));
+    </script>
+   
+  </body>
+</html>
