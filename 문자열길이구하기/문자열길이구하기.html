@@ -15,23 +15,22 @@
             var res = "";
             var result = "";
             
-            for(var i = 0 ; i < str.length ; i++)
+            for(var i = 0 ; i < str.length ; i++) 
             {
-                console.log(str[i].length);
+                console.log(str[i].length); //인덱스별로 나뉘어서 출력
                
-                chars = str[i].split("");
+                chars = str[i].split("");   //문자열을 하나의 문자로 나누기위해 공백을 하나로 처리 
                  
-                for(var j = 0 ; j < chars.length ; j++)
+                for(var j = 0 ; j < chars.length ; j++) //자른 문자열 길이만큼 반복 
                 {
-                    console.log(chars[j].split(""));
-                    res = chars[j];
+                    res = chars[j]; // 자른 문자열을 인덱스별로 확인하기
                     
-                    if(j % 2 == 0)
+                    if(j % 2 == 0) // 만약 길이만큼 나누었을때 결과가 짝수가 나올때 
                     {
-                        result += res;
+                        result += res; // res중 짝수만 결과를 넣는다 
                     }
                 }
-                if(i != str.length-1)
+                if(i != str.length-1) // 만약 중첩 for문 안에 같이 넣게 된다면 하나하나씩 공백이 들어가기때문에 위 for문으로 돌리기
                 {
                    result += " ";
                 }
@@ -40,10 +39,10 @@
             
             return result;            
         }
-        
+        //문자 테스트 나중에 한번씩해보기
         var ret = word("show me the money");
         console.log(ret);
-        console.log(ret === "so m te mny" ? "정답" : "오답");
+        console.log(ret === "so m te mny" ? "정답" : "오답"); // word함수를 호출하고 결과값이 정확하면 true 아니면 false 출력
         
     </script>
    
