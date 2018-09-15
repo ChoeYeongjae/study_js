@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+        
+        function word(n)
+        {
+            var str = n.split(" ");
+            var words = "";
+            var res = "";
+            var result = "";
+            
+            for(var i = 0 ; i < str.length ; i++)
+            {
+                console.log(str[i].length);
+               
+                chars = str[i].split("");
+                 
+                for(var j = 0 ; j < chars.length ; j++)
+                {
+                    console.log(chars[j].split(""));
+                    res = chars[j];
+                    
+                    if(j % 2 == 0)
+                    {
+                        result += res;
+                    }
+                }
+                if(i != str.length-1)
+                {
+                   result += " ";
+                }
+            }
+            
+            
+            return result;            
+        }
+        
+        var ret = word("show me the money");
+        console.log(ret);
+        console.log(ret === "so m te mny" ? "정답" : "오답");
+        
+    </script>
+   
+  </body>
+</html>

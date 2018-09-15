@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+        
+        function word(n)
+        {
+         var str = "Even odd"
+         var strs = str.split(" ");
+         var strss = "";
+            
+         for(var i = 0 ; i < strs.length ; i++)
+         {
+             if(n % 2  == 0 )   //짝수인경우 
+             {
+                 strss = strs[i];
+                 break;
+             }
+             else               //홀수인경우
+             {
+                 strss = strs[i];
+             }
+         }
+            console.log(strss);
+        }
+        word(prompt("입력해주세요"));
+    </script>
+   
+  </body>
+</html>
