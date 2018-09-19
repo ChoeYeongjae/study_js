@@ -8,22 +8,37 @@
 
     <script>
         
-        function word(n)
+        function add()
         {
-          
             var a = parseInt(prompt("a입력"));
             var b = parseInt(prompt("b입력"));
-            
             var result = 0;
             
+            if( a < b )
+            {
             for(var i = a ; i <= b ; i++)
             {
                 console.log(result += i); //a의정수입력받은값 복합연산를 통해 for문이 반복할동안 계속 출력 
+            }   
+                if(a == b)
+                {
+                    console.log(result);   
+                }
             }
-                console.log(result);        
+            else 
+            {
+            for(var i = a ; i >= b ; i--)            
+            {
+                console.log(result += i); //a의정수입력받은값 복합연산를 통해 for문이 반복할동안 계속 출력 
+            }
+                if(a == b)
+                {
+                    console.log(result);
+                }    
+            }    
         }
-        word();
-    </script>
-   
+        add();
+        
+    </script>   
   </body>
 </html>
