@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+        
+        function harshad(str)
+        {
+            var firstvalue = str.split("");  // 입력받은 문자열을 split()함수를 사용하여 하나씩 나뉘어서 첫번째변수에 저장
+            var twovalue = "";             // 반복문에서 하나의 인덱스값을 받기 위한 배열로 초기화한 변수
+            var threevalue = "";           // 나뉘어서 저장된 배열을 문자열로 변환하기 변수
+            var strnum = 0;                // 문자열로 바꾼 값을 정수형태로 저장하는 변수
+            var result = 0;                // 각각 나눈값들을 더하여서 저장하기 위한 변수
+            
+            for(var i = 0 ; i <= firstvalue.length-1 ; i++ ) // 인덱스 == 길이 같아야 조건을 끝내고 연산가능 
+            {
+                strnum = parseInt(str);      
+                twovalue = firstvalue[i].split("");
+                threevalue = twovalue.join("");
+                result += parseInt(threevalue);
+                
+                console.log(result);            
+            }
+            if(strnum % result == 0) // 입력한 값과 두정수의 합을 나누었을때 0으로 나눠떨어지는 조건 
+            {
+                console.log("이수는 하샤드의 수입니다.");
+            }
+            else
+            {
+                console.log("하샤드의 수가 아닙니다.");
+            }
+        }
+        harshad(prompt("입력하세요"));
+        
+    </script>   
+  </body>
+</html>
