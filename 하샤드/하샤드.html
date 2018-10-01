@@ -11,14 +11,12 @@
         function harshad(str)
         {
             var firstvalue = str.split("");  // 입력받은 문자열을 split()함수를 사용하여 하나씩 나뉘어서 첫번째변수에 저장
-            var twovalue = "";             // 반복문에서 하나의 인덱스값을 받기 위한 배열로 초기화한 변수
             var result = 0;                // 각각 나눈값들을 더하여서 저장하기 위한 변수
             
             for(var i = 0 ; i < firstvalue.length ; i++ ) // 인덱스 == 길이 같아야 조건을 끝내고 연산가능 
             {
       
-                twovalue = firstvalue[i];
-                result += parseInt(twovalue);
+                result += parseInt(firstvalue[i]); // 이미 짤려있는 배열을 parseint()함수안에 넣고 돌리면 됨
                 
                 console.log(result);            
             }
