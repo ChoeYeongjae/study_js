@@ -14,10 +14,10 @@
             var twovalue = "";             // 반복문에서 하나의 인덱스값을 받기 위한 배열로 초기화한 변수
             var result = 0;                // 각각 나눈값들을 더하여서 저장하기 위한 변수
             
-            for(var i = 0 ; i <= firstvalue.length-1 ; i++ ) // 인덱스 == 길이 같아야 조건을 끝내고 연산가능 
+            for(var i = 0 ; i < firstvalue.length ; i++ ) // 인덱스 == 길이 같아야 조건을 끝내고 연산가능 
             {
       
-                twovalue = firstvalue[i].split("").join("");
+                twovalue = firstvalue[i];
                 result += parseInt(twovalue);
                 
                 console.log(result);            
