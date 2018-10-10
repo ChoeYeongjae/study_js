@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+       <!--SUBSTRING : 시작값 , 마지막값 까지 잘라서 넣음 -->
+    <script>
+        
+        function fingerWord(str)
+        {
+            var word = str;
+            var res = "";
+            var num = 0 ;
+            
+            num = str.length / 2;
+            nums = Math.floor(num);
+            
+            if(str.length % 2 == 1)
+            {
+                res = word.substring(nums,nums+1); //첫번째 자른 수 (첫번째 시작) , 두번째 자른 수 + 1을 해야 그다음수까지 자르고 리턴
+                console.log(res);
+            }
+            else
+            {
+                res = word.substring(nums-1,nums)+word.substring(nums,nums+1); 
+                console.log(res);
+            }
+        }
+        fingerWord(prompt("입력해주세요"));
+     
+    </script>   
+  </body>
+</html>
