@@ -14,17 +14,16 @@
             var res = "";
             var num = 0 ;
             
-            num = str.length / 2;
-            nums = Math.floor(num);
+            num = Math.floor(str.length / 2);
             
             if(str.length % 2 == 1)
             {
-                res = word.substring(nums,nums+1); //첫번째 자른 수 (첫번째 시작) , 두번째 자른 수 + 1을 해야 그다음수까지 자르고 리턴
+                res = word.substring(num,num+1); //첫번째 자른 수 (첫번째 시작) , 두번째 자른 수 + 1을 해야 그다음수까지 자르고 리턴
                 console.log(res);
             }
             else
             {
-                res = word.substring(nums-1,nums)+word.substring(nums,nums+1); 
+                res = word.substring(num-1,num+1) // 현재 숫자에서 -1하면  첫번째숫자 부터 마지막숫자 출력가능함 
                 console.log(res);
             }
         }
