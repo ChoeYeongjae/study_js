@@ -12,22 +12,33 @@
      
     <script>
         
+        
         function lotto()
         {
-            var result = new Array();
-            
+            var results = new Array();
+            var count = 0;    
+        
             for(var i = 0 ; i < 6 ; i++)
             {
-                var Randem = Math.floor((Math.random() * 45) + 1);
-                result += Randem.toString();
+                while(results.length < 6)
+                {        
+                    var Random = Math.floor(Math.random()*45)+1;
+                    var result = Random.toString();
+                    
+                    if(results[i] == result)
+                    {
+                        count++;
+                        continue;
+                    }
+                    else
+                    {   
+                        results += result;           
+                    }
+                }
                 
-                if(i != 6-1)
-                {
-                   result += ",";
-                }   
             }
-            console.log(result);
-        }   
+                console.log(results);
+        }
         
     </script>   
   </body>
