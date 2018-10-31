@@ -20,14 +20,12 @@
             
             for(var i = 0 ; i < 6 ; i++)
             {
-                var result = new Array();
-                
                 while(results.length < 6)
                 {
-                         
+                
                 var random = Math.floor(Math.random()*45)+1;
                 var result = random.toString().split("  ");
-                
+                    
                     
                 if(results[i] == result)
                 {
@@ -38,10 +36,10 @@
                 {
                    results.push(result);
                 }
-                }
-                   console.log(results[i]);
+                 console.log(results);
               }
-            }
+          }
+        }
     </script>   
   </body>
 </html>
